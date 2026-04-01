@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 230 25% 7%;
+    --foreground: 40 30% 92%;
+
+    --card: 230 20% 11%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 230 20% 11%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 38 65% 55%;
+    --primary-foreground: 230 25% 7%;
+
+    --secondary: 230 15% 16%;
+    --secondary-foreground: 40 20% 80%;
+
+    --muted: 230 15% 14%;
+    --muted-foreground: 230 10% 50%;
+
+    --accent: 38 45% 40%;
+    --accent-foreground: 40 30% 92%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 230 15% 18%;
+    --input: 230 15% 18%;
+    --ring: 38 65% 55%;
+
+    --radius: 0.75rem;
+
+    --gold-glow: 38 80% 60%;
+    --warm-overlay: 30 40% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-body {
+    font-family: 'Lora', serif;
+  }
+}
